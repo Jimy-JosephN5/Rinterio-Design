@@ -3,7 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rinterio</title>
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- DaisyUI and Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-btn": "#ABEF5F",
+              'bg-body' : "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);"
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body class="bg-slate-200">
+    <!-- Header section  -->
+    <header">
+      <!-- navbar -->
+      <nav class="container lg:w-[1170px] mx-auto">
+        <div class="navbar">
+          <div class="navbar-start gap-5">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-gray-300"
+              >
+                <li><a class="font-bold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- ------------------------- -->
+            <!-- title name -->
+            <div class="flex items-center gap-2">
+              <div>
+                <i
+                  class="fa-solid fa-circle-arrow-up text-black lg:text-xl rotate-45"
+                ></i>
+              </div>
+              <div>
+                <a class="text-xl lg:text-2xl font-bold text-black">Rinterio</a>
+              </div>
+            </div>
+            <!-- ------------------------- -->
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-gray-700">
+              <li><a class="font-bold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- ------------------------- -->
+          <!-- Login Button -->
+          <div class="navbar-end flex gap-5">
+            <div>
+              <i
+                class="fa-solid fa-magnifying-glass cursor-pointer text-slate-900 bg-gray-100 p-2 rounded-full sm:inline-block hidden"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-cart-shopping cursor-pointer text-slate-900 bg-gray-100 p-2 rounded-full sm:inline-block hidden"
+              ></i>
+            </div>
+            <div>
+              <a
+                class="bg-btn-btn text-slate-950 rounded-3xl px-2.5 py-2 font-bold text-xs md:text-base cursor-pointer"
+                >Book Consult
+                <i
+                  class="fa-solid fa-circle-arrow-up bg-btn-btn rotate-45 lg:text-base"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <!-- ------------------------- -->
+        </div>
+      </nav>
+
+      <!-- Banner Section -->
+       <section class="container lg:w-[1170px] mx-auto flex flex-col items-center my-14">
+        <div>
+          <img class="w-[300px] md:w-[500px]" src="./assets/banner.png" alt="">
+        </div>
+
+        <div class="text-center">
+          <h1 class="text-slate-900 lg:text-5xl md:text-4xl text-3xl font-extrabold w-[70%] mx-auto text-center my-5">A barn house of this design has a striking appearance</h1>
+          <p class="w-[70%] text-center mx-auto my-5 text-slate-500 text-sm md:text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <button class="bg-btn-btn text-slate-950 rounded-3xl px-2.5 py-2 text-xs md:text-sm font-bold cursor-pointer" >View Details <i class="fa-solid fa-circle-arrow-up rotate-45 text-center"></i></button>
+        </div>
+       </section>
+    </header>
+
+    <!-- Main Section -->
+     <main class="bg-[#d1d5db]">
+
+      </section>
+     </main>
+  </body>
 </html>
